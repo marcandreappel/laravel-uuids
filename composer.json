@@ -1,0 +1,21 @@
+{
+  "name": "marcandreappel/laravel-uuids",
+  "description": "Allows the usage UUIDs in Eloquent models",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marc-André Appel",
+      "email": "marc-andre@appel.fun"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "illuminate/support": "^8.36"
+  },
+  "autoload": {
+    "psr-4": {
+      "MarcAndreAppel\\LaravelUuids\\": "src"
+    }
+  }
+}
