@@ -7,9 +7,12 @@ use Illuminate\Support\Str;
 
 trait WithUuids
 {
-    protected static function bootUuids()
+    protected static function bootWithUuids()
     {
         static::creating(function ($model) {
+            if (empty($model->id)) {
+                $model->id = (string) Str::uuid();
+            }
             $model->keyType = 'string';
             $model->incrementing = false;
             $model->casts = array_merge($model->casts, ['id' => 'string']);
