@@ -5,7 +5,7 @@ namespace MarcAndreAppel\LaravelUuids;
 
 use Illuminate\Support\Str;
 
-trait Uuids
+trait WithUuids
 {
     protected static function bootUuids()
     {

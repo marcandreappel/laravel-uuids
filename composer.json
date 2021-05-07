@@ -2,6 +2,7 @@
   "name": "marcandreappel/laravel-uuids",
   "description": "Allows the usage UUIDs in Eloquent models",
   "type": "library",
+  "homepage": "https://github.com/marcandreappel/laravel-uuids",
   "license": "MIT",
   "authors": [
     {
