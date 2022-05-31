@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 
 trait WithUuids
 {
-    protected static function bootWithUuids()
+    protected static function bootWithUuids(): void
     {
         static::creating(function ($model) {
             if (empty($model->id)) {
@@ -21,12 +21,12 @@ trait WithUuids
         });
     }
 
-    public function getIncrementing()
+    public function getIncrementing(): bool
     {
         return false;
     }
 
-    public function getKeyType()
+    public function getKeyType(): string
     {
         return 'string';
     }
